@@ -32,7 +32,7 @@ pipeline {
         }
 	stage('Deployment') {
 	   steps {
-		sh 'scp target/gamutkart.war root@172.31.30.230:/root/Distros/apache-tomcat-10.1.33/webapps'
+		sh 'scp target/gamutkart.war root@172.31.4.31:/root/Distros/apache-tomcat-10.1.33/webapps'
 	}
     }
 }
